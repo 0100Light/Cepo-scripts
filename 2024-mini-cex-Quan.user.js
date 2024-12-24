@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        2024 miniCEX 全
+// @name        2024 mini-Cex-全
 // @namespace   Violentmonkey Scripts
 // @match       https://cts.tsgh.ndmctsgh.edu.tw/form/prompt/fillForm*
 // @grant       none
