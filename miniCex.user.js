@@ -4,7 +4,7 @@
 // @match       *://cts.tsgh.ndmctsgh.edu.tw/form/prompt/fillForm*
 // @grant       none
 // @version     1.0
-// @author      -
+// @author      Light
 // @description 2024/12/24 上午8:28:36
 // @require  https://raw.githubusercontent.com/CoeJoder/waitForKeyElements.js/refs/heads/master/waitForKeyElements.js
 // ==/UserScript==

@@ -3,8 +3,8 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Select the first span and radio input in specific divs
-// @author       You
-// @match        *://*/*
+// @author       Light
+// @match        *://cts.tsgh.ndmctsgh.edu.tw/*
 // @grant        none
 // ==/UserScript==
 
