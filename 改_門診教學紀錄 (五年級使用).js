@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        門診教學紀錄 (五年級使用)
+// @name        改_門診教學紀錄 (五年級使用)
 // @namespace   Violentmonkey Scripts
 // @match       https://cts.tsgh.ndmctsgh.edu.tw/form/prompt/fillForm*
 // @grant       none

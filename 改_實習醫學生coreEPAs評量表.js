@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Core EPA Review
+// @name        改_實習醫學生coreEPAs評量表
 // @namespace   Violentmonkey Scripts
 // @match       https://cts.tsgh.ndmctsgh.edu.tw/form/prompt/fillForm*
 // @grant       none
@@ -10,7 +10,8 @@
 
 console.warn('Core EPA Review loaded')
 
-const option = 3
+// Adjust this to set score
+const option = 2
 
 for (let i = 0; i < 13; i++) {
 

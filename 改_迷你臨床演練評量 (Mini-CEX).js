@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        2024-mini-cex-review
+// @name        改_迷你臨床演練評量 (Mini-CEX).js
 // @namespace   Violentmonkey Scripts
 // @match       https://cts.tsgh.ndmctsgh.edu.tw/form/prompt/fillForm*
 // @grant       none
@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 
-// active problem
+// add comment
 setTimeout(() => {
     const activeProblemIframe = document.querySelector('.cke_wysiwyg_frame.cke_reset')
     if (activeProblemIframe && activeProblemIframe.contentDocument) {
@@ -21,14 +21,15 @@ setTimeout(() => {
     }
 
 }, 1500)
-const diffcultyRadio = document.querySelector("#formForm > div:nth-child(25) > div span:nth-child(2) > input[type='radio']").checked = true
 
-const isNewPatientRadio = document.querySelector("#formForm > div:nth-child(26) > div span:nth-child(2) > input[type='radio']").checked = true
+// check radios [value=7]
+const radioButtons = document.querySelectorAll('input[type="radio"][data-fillflag="write"][value="6"]');
+console.warn(`radio buttons: ${radioButtons.length} found.`)
+radioButtons.forEach(radio => {
+    radio.checked = true;
+});
 
-// scores
-document.querySelector("#formForm > div:nth-child(27) > div")
-for (let i=27; i<34; i++){
-    const scoreRadio = document.querySelector("#formForm > div:nth-child(" + i + ") > div span:nth-child(6) > input[type='radio']").checked = true
-}
 
-const finalScore = document.querySelector("#formForm > div:nth-child(35) > div span:nth-child(10) > input[type='radio']").checked = true
+// satisfaction
+const satisfactionDiv = document.querySelector("#formForm > div:nth-child(39) > div > span:nth-child(10) input[type='radio']")
+satisfactionDiv.checked = true

@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        2023 mini-Cex-全
+// @name        三軍總醫院教學住診紀錄 - 全-盧o芳
 // @namespace   Violentmonkey Scripts
 // @match       *://cts.tsgh.ndmctsgh.edu.tw/form/prompt/fillForm*
 // @grant       none
@@ -42,6 +42,10 @@
     teacher.value = '葉大全'
     studentName.value = '王翊光'
     teachingSite.value = 'Bedside'
+
+    // Level is resident
+    const residentRadio = document.querySelector('#formForm > div:nth-child(29) span:nth-child(4) input[type="radio"]')
+    residentRadio.checked = true
 
 
     // Sex and age
